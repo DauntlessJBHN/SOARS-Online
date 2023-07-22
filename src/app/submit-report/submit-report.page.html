@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true">
+
+  <ion-app>
+    
+    <div class="ion-page" id="main-content">
+
+      <ion-content class="ion-no-margin">
+        <ion-img src="assets/images/oso header.jpg"></ion-img>
+
+        <ion-card class="navigation-top-button">
+          <ion-card-header>
+            <ion-card-title align="center">SUBMISSION OF ACCOMPLISHMENT REPORT</ion-card-title>
+            <ion-card-subtitle>
+
+              Format: Please submit the report in a digital format (PDF preferred) for easy sharing and archiving. Ensure that the document is neatly formatted and well-organized.
+              <br><br>
+              Content: The report should cover the activities and initiatives undertaken during the academic year. Highlight key events, projects, collaborations, community service, workshops, and any other significant contributions to the university community.
+              <br><br>
+              Accurate Information: Verify that all information presented in the report is accurate and supported with relevant data, photos, or testimonies where possible.
+              <br><br>
+              Deadline: The deadline for submission of the accomplishment report is [Insert Deadline Date]. Late submissions may not be included in the final report.
+              <br><br>
+              Length: Keep the report concise, preferably within 3 to 5 pages, focusing on the most impactful aspects of the organization's work.
+              <br><br>
+              Inclusion of Media: If applicable, include photographs, videos, or media coverage related to the events or activities conducted.</ion-card-subtitle>
+          
+              <div class="action-button" (click)="GoToHome()">
+                <ion-button>
+                <ion-icon slot="start" name="folder"></ion-icon> Upload Report
+              </ion-button>
+              </div>
+            </ion-card-header>
+        </ion-card> 
+      </ion-content>
+
+      
+    </div>
+  </ion-app>
+
+</ion-content>

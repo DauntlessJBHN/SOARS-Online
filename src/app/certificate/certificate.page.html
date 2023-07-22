@@ -1,0 +1,67 @@
+<ion-content [fullscreen]="true">
+
+  <ion-app>
+    
+    <div class="ion-page" id="main-content">
+
+      <ion-content class="ion-no-margin">
+        <ion-img src="assets/images/oso header.jpg"></ion-img>
+
+        <ion-card class="navigation-top-button">
+          <ion-card-header>
+            <ion-card-title align="center">REQUEST FOR CERTIFICATE</ion-card-title>
+            <ion-card-subtitle>
+              Claim the hard-copy in the Office of Student Organizations located in Fitness Development Center.
+            </ion-card-subtitle>
+            
+
+
+            <ion-list>
+              <div class="form">
+                <ion-item>
+                  <ion-input label="FULL NAME" label-placement="stacked" placeholder="First Name MI. Last Name"></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                  <ion-input label="PROGRAM" label-placement="stacked" placeholder="Program and Major"></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                  <ion-input label="ORGANIZATION" label-placement="stacked" placeholder="Name of Organization"></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                  <ion-input label="POSITION" label-placement="stacked" placeholder="Officership or Member"></ion-input>
+                </ion-item>
+                <br>
+                <ion-item>
+                <ion-select label="CAMPUS" label-placement="stacked" placeholder="Campus">
+                  <ion-select-option value="apple">Alangilan</ion-select-option>
+                  <ion-select-option value="banana">Balayan</ion-select-option>
+                  <ion-select-option value="orange">Lobo</ion-select-option>
+                  <ion-select-option value="orange">Mabini</ion-select-option>
+                </ion-select>
+              </ion-item>
+              <br>
+                <ion-item>
+                  <ion-input label="PURPOSE" label-placement="stacked" placeholder="Purpose of Certificate"></ion-input>
+                </ion-item>
+              </div>
+            </ion-list>
+
+
+            <div class="action-button" (click)="GoToHome()">
+              <ion-button>
+              <ion-icon slot="start" name="document"></ion-icon> SUBMIT REQUEST
+            </ion-button>
+            </div>
+
+            </ion-card-header>
+        </ion-card> 
+      </ion-content>
+
+      
+    </div>
+  </ion-app>
+
+</ion-content>

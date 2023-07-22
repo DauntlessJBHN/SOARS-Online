@@ -1,0 +1,30 @@
+<ion-content class="background" color="primary">
+  <div class="container">
+    <div class="form-container"> <!-- New container div for the form -->
+      <ion-list>
+        <div class="form">
+          <ion-item>
+            <ion-input label="Email" label-placement="stacked" placeholder="Enter Your Email"></ion-input>
+          </ion-item>
+        </div>
+        <div class="form2">
+          <ion-item>
+            <ion-input label="Password" type="password" label-placement="stacked" placeholder="Enter your Password"></ion-input>
+          </ion-item>
+        </div>
+        <ion-row>
+          <ion-col class="center"> <!-- Center the content within this column -->
+            <a [routerLink]="['/forgotpassword']" class="small-text">Forgot Password?</a>
+            <ion-button type="submit" class="login-button" routerLink="/home">Log in</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-list>
+    </div> <!-- End of form-container -->
+
+    <div class="register">
+      <ion-label routerLink="/signup">
+        Don't have an account?
+      </ion-label>
+    </div>
+  </div>
+</ion-content>

@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true">
+
+  <ion-app>
+
+    <ion-toolbar fill="clear" color="medium">
+      <ion-button slot="start" fill="clear">
+        <ion-menu-button menu="main-menu"></ion-menu-button>
+      </ion-button>
+    </ion-toolbar>
+    
+    <div class="ion-page" id="main-content">
+
+      <ion-content class="ion-no-margin" color="primary">
+        <ion-img src="assets/images/header.png"></ion-img>
+
+      
+      <ion-button fill="clear" class="navigation-top-button" (click)="GoToAnnouncements()">
+        <ion-card class="card-custom" style="background-image: url('assets/images/announcements.jpg'); background-size: 100%">
+          
+          <ion-card-header >
+            <ion-card-title color="primary">ANNOUNCEMENTS</ion-card-title>
+            <ion-card-subtitle>Get updated on the latest happenings and news</ion-card-subtitle>
+          </ion-card-header>
+        
+        </ion-card>
+      </ion-button>
+
+      <ion-button fill="clear" class="navigation-button" (click)="GoToOffice()">
+        <ion-card class="card-custom" style="background-image: url('assets/images/office.jpg'); background-size: 100%">
+          
+          <ion-card-header >
+            <ion-card-title color="primary">OFFICE</ion-card-title>
+            <ion-card-subtitle>Transact and connect with the office that supervises all student organizations in the campus</ion-card-subtitle>
+          </ion-card-header>
+        
+        </ion-card>
+      </ion-button>
+
+      <ion-button fill="clear" class="navigation-button" (click)="GoToStudentCouncils()">
+        <ion-card class="card-custom" style="background-image: url('assets/images/studentcouncils.jpg'); background-size: 100%">
+          
+          <ion-card-header >
+            <ion-card-title color="primary">STUDENT COUNCILS</ion-card-title>
+            <ion-card-subtitle>Know more about the activities and operations of the student councils.</ion-card-subtitle>
+          </ion-card-header>
+        
+        </ion-card>
+      </ion-button>
+
+      <ion-button fill="clear" class="navigation-button" (click)="GoToStudentOrganizations()">
+        <ion-card class="card-custom" style="background-image: url('assets/images/student organizations.jpg'); background-size: 100%">
+          
+          <ion-card-header >
+            <ion-card-title color="primary">STUDENT ORGANIZATIONS</ion-card-title>
+            <ion-card-subtitle>Know more about the activities and operations of the student organizations.</ion-card-subtitle>
+          </ion-card-header>
+        
+        </ion-card>
+      </ion-button>
+
+      </ion-content>
+    </div>
+  </ion-app>
+
+</ion-content>
